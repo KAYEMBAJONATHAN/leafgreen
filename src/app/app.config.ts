@@ -3,7 +3,7 @@ import { RouterModule} from '@angular/router';
 import { NgModule } from '@angular/core';
 import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
+import { FormsModule, FormControl } from '@angular/forms';
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -11,7 +11,10 @@ export const appConfig: ApplicationConfig = {
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+    FormsModule,
+    FormControl
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

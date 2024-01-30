@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-us',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './contact-us.component.css'
 })
 export class ContactUsComponent {
-
+   nom = new FormControl('');
+   postNom = new FormControl('');
+   tonNumero = new FormControl('');
+   email = new FormControl('');
 }
+
+
