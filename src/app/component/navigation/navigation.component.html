@@ -1,10 +1,23 @@
-<nav class="navbar">
-    <div class="logo">Green Leaf</div>
-    <ul class="nav-list">
-      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="about" routerLinkActive="active">About</a></li>
-      <li><a routerLink="product" routerLinkActive="active">Product</a></li>
-      <li><a routerLink="order" routerLinkActive="active">Cart</a></li>
-      <li><a routerLink="contact-us" routerLinkActive="active">Contact</a></li>
-    </ul>
-  </nav>
+<header>
+   <div class="container">
+      <a routerLink="/" class="logo">Green Leaf Veggies</a>
+      <nav>
+        <ul>
+           <li>
+            <a href="">login</a>
+           </li>
+           <li class="menu-container">
+            <a routerLink="/dashboard">DashBoard</a>
+             <div class="menu">
+              <a routerLink="/profile">Profile</a>
+              <a routerLink="/order">Order</a>
+              <a routerLink="/logout">Logout</a>
+             </div>
+          </li>
+          <li>
+              <a routerLink="/cart">Cart <span>6</span></a>
+          </li>
+        </ul>
+      </nav>
+   </div>
+</header>
