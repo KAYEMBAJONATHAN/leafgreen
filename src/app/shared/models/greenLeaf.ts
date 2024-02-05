@@ -7,5 +7,5 @@ export class GreenLeaf {
     stars!: number;
     imageUrl!: string;
     orgins!: string[];
-    DeliveryTime!: string
+    deliveryTime!: string
 }

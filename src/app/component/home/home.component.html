@@ -1,6 +1,6 @@
 <ul>
-  <li *NgFor="let greenLeaf of greenLeafs">
-    <a routerLink="'/greenLeaf', greenLeaf.id">
+  <li *ngFor="let greenLeaf of greenLeafs">
+    <a routerLink="/greenLeaf,  greenLeaf.id">
       <img [src]="greenLeaf.imageUrl" [alt]="greenLeaf.name">
       <div class="content">
         <div class="name">
@@ -8,7 +8,21 @@
         </div>
         <span class="favorite {{greenLeaf.favorite?'':'not'}}"></span>
         <div class="stars">
-         
+         <span class="star {{greenLeaf.stars}}"></span>
+        </div>
+        <div class="productItem">
+          <div class="origins">
+            <span *ngFor="let orgin of greenLeaf.orgins"></span>
+          </div>
+        </div>
+        <div class="delivery">
+          {{greenLeaf.deliveryTime}}
+        </div>
+        <div class="tag">
+           {{greenLeaf.tag}}
+        </div>
+        <div class="price">
+             R{{greenLeaf.price}}
         </div>
       </div>
     </a>
