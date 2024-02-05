@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GreenLeaf } from '../../shared/models/greenLeaf';
+import { DataService } from '../../data.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,16 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+
+export class HomeComponent implements OnInit{
+   greenLeafs: GreenLeaf[] = [];
+   
+  constructor(private api: DataService){
+    this.greenLeafs = api.getAll();
+  }
+
+  ngOnInit(): void {
+    
+  }
 
 }

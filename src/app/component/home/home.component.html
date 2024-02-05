@@ -1,0 +1,16 @@
+<ul>
+  <li *NgFor="let greenLeaf of greenLeafs">
+    <a routerLink="'/greenLeaf', greenLeaf.id">
+      <img [src]="greenLeaf.imageUrl" [alt]="greenLeaf.name">
+      <div class="content">
+        <div class="name">
+            {{greenLeaf.name}}
+        </div>
+        <span class="favorite {{greenLeaf.favorite?'':'not'}}"></span>
+        <div class="stars">
+         
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>

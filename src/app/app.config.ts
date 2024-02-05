@@ -5,6 +5,7 @@ import { ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { FormsModule, FormControl } from '@angular/forms';
 import { routes } from './app.routes';
+import { RatingModule } from 'ng-starrating';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes)]
@@ -13,7 +14,8 @@ export const appConfig: ApplicationConfig = {
 @NgModule({
   imports: [RouterModule.forRoot(routes),
     FormsModule,
-    FormControl
+    FormControl,
+    RatingModule
   ],
   exports: [RouterModule],
 })

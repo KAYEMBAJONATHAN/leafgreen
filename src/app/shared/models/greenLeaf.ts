@@ -4,7 +4,7 @@ export class GreenLeaf {
     price!: number;
     tag?: string[];
     favorite!: boolean;
-    starts!: number;
+    stars!: number;
     imageUrl!: string;
     orgins!: string[];
     DeliveryTime!: string

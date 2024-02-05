@@ -12,8 +12,8 @@ export class DataService {
       name: 'Green Pepper',
       price: 34,
       favorite: false,
-      starts: 8.3,
-      imageUrl: '',
+      stars: 8.3,
+      imageUrl: './assets/green-peppers.jpg',
       orgins: ['matadi'],
       DeliveryTime: '9-23',
       tag: ['Tomato', 'Chili', 'Potatoes']
@@ -21,4 +21,8 @@ export class DataService {
   ];
 
   constructor() {}
+
+  getAll():GreenLeaf[] {
+    return this.sample_veggies
+  }
 }
