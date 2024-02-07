@@ -1,1 +1,5 @@
-<p>search-term works!</p>
+<div>
+    <input #s type="text" placeholder="search veggies in the shop 0" 
+     (keyup.enter)="search(s.value)" [value]="searchTerm">
+     <button (click)="search(s.value)">Search</button>
+</div>

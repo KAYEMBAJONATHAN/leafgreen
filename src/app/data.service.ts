@@ -2,7 +2,6 @@
 import { Injectable } from '@angular/core';
 import { GreenLeaf } from './shared/models/greenLeaf';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -12,7 +11,7 @@ export class DataService {
     {
       id: '1',
       name: 'Green Pepper',
-      price: 34,
+      price: 57,
       favorite: false,
       stars: 8.3,
       imageUrl: '../assets/green-peppers.jpg',
@@ -23,7 +22,7 @@ export class DataService {
     {
       id: '2',
       name: 'Chilli',
-      price: 30,
+      price: 15,
       favorite: false,
       stars: 5.3,
       imageUrl: '../assets/chilli.png',
@@ -34,7 +33,7 @@ export class DataService {
     {
       id: '3',
       name: 'Carrots',
-      price: 30,
+      price: 10,
       favorite: false,
       stars: 5.3,
       imageUrl: '../assets/carrot.jpeg',
@@ -45,7 +44,7 @@ export class DataService {
     {
       id: '4',
       name: 'Tomate',
-      price: 30,
+      price: 36,
       favorite: false,
       stars: 5.3,
       imageUrl: '../assets/tomate.jpg',
@@ -53,7 +52,8 @@ export class DataService {
       deliveryTime: '8-2',
       tag: ['Tomate']
     },
-
+  
+    
     {
       id: '5',
       name: 'Banana',

@@ -18,9 +18,9 @@ export class HomeComponent implements OnInit{
    
   constructor(private api: DataService, activateRoute: ActivatedRoute){
     activateRoute.params.subscribe( (params) => {
-     if(params['searchTerm'])
+     if(params['searchTerm']) {
       this.greenLeafs= this.api.getAllGreenLeafByTerm(params['searchTerm']);
-    
+     }
     else
     this.greenLeafs = api.getAll();
     })
