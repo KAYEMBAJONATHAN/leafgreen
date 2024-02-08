@@ -1,18 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule} from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../../data.service';
 import { GreenLeaf } from '../../shared/models/greenLeaf';
-import { RatingModule } from 'ng-starrating/public-api';
 
 @Component({
   selector: 'app-food',
   standalone: true,
-  imports: [],
   templateUrl: './food.component.html',
-  styleUrl: './food.component.css'
+  styleUrl: './food.component.css',
+  imports:[
+    CommonModule,
+  ]
 })
 export class FoodComponent implements OnInit{
   greenLeaf!: GreenLeaf;
+tag: any;
 
   constructor(private api:  DataService, activateRoute: ActivatedRoute){
     activateRoute.params.subscribe((params) => {

@@ -31,7 +31,7 @@ export const sample_veggies: GreenLeaf[] = [
       favorite: false,
       stars: 5.3,
       imageUrl: '../assets/carrot.jpeg',
-      orgins: ['mitedi'],
+      orgins: ['bukavu'],
       deliveryTime: '8-2',
       tag: ['Carrots']
     },
@@ -42,7 +42,7 @@ export const sample_veggies: GreenLeaf[] = [
       favorite: false,
       stars: 5.3,
       imageUrl: '../assets/tomate.jpg',
-      orgins: ['mitedi'],
+      orgins: ['kishasa'],
       deliveryTime: '8-2',
       tag: ['Tomate']
     },
@@ -54,7 +54,7 @@ export const sample_veggies: GreenLeaf[] = [
       favorite: false,
       stars: 3.3,
       imageUrl: '../assets/bananas.jpg',
-      orgins: ['matadi'],
+      orgins: ['Bas congo'],
       deliveryTime: '5-23',
       tag: ['Banana']
     },
@@ -65,7 +65,7 @@ export const sample_veggies: GreenLeaf[] = [
       favorite: false,
       stars: 2.3,
       imageUrl: '../assets/plantin.jpg',
-      orgins: ['mitedi'],
+      orgins: ['Lomami'],
       deliveryTime: '1-2',
       tag: ['Plantin']
     },
@@ -76,7 +76,7 @@ export const sample_veggies: GreenLeaf[] = [
       favorite: false,
       stars: 3.3,
       imageUrl: '../assets/pondu.jpg',
-      orgins: ['mitedi'],
+      orgins: ['Katanga'],
       deliveryTime: '7-2',
       tag: ['Pondu']
     },
@@ -87,7 +87,7 @@ export const sample_veggies: GreenLeaf[] = [
       favorite: false,
       stars: 6.3,
       imageUrl: '../assets/red-pepper.jpg',
-      orgins: ['mitedi'],
+      orgins: ['Mbm'],
       deliveryTime: '4-2',
       tag: ['Red Pepper']
     }

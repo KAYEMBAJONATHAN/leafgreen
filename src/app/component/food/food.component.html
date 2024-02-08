@@ -6,9 +6,14 @@
         <span class="favorite{{greenLeaf.favorite?'':'not'}}"></span>
     </div>
         <div class="rating {{greenLeaf.stars}}">
-            <star-rating ></star-rating>
-            <angular-star-rating></angular-star-rating>
-
         </div>
+        <div class="orgins">
+            <span *ngFor="let orgin of greenLeaf.orgins">{{orgin}}</span>
+        </div>
+        <div *ngIf="tag">
+            <a *ngFor="let tag of greenLeaf.tag" routerLink="/tag/">
+              {{tag}}
+            </a>
+         </div>
    </div>
 </div>
