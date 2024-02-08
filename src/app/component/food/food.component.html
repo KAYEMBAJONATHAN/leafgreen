@@ -1,0 +1,14 @@
+<div class="container">
+   <img [src]="greenLeaf.imageUrl" [alt]="greenLeaf.name">
+   <div class="details">
+    <div class="header">
+        <span class="name">{{greenLeaf.name}}</span>
+        <span class="favorite{{greenLeaf.favorite?'':'not'}}"></span>
+    </div>
+        <div class="rating {{greenLeaf.stars}}">
+            <star-rating ></star-rating>
+            <angular-star-rating></angular-star-rating>
+
+        </div>
+   </div>
+</div>

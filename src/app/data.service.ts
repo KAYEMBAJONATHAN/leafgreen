@@ -28,6 +28,10 @@ export class DataService {
      this.getAll().filter(greenLeaf => 
       greenLeaf.tag?.includes(tag));
   }
+
+  getAllVeggiesById(greenLeaf: string) {
+    return this.getAll().find(greenLeaf => greenLeaf.id) ?? new GreenLeaf();
+  }
 }
 
 

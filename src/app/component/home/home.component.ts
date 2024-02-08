@@ -5,6 +5,7 @@ import { DataService } from '../../data.service';
 import { ActivatedRoute } from '@angular/router';
 import { TagComponent } from "../tag/tag.component";
 import { SearchTermComponent } from '../search-term/search-term.component';
+import { FoodComponent } from "../food/food.component";
 
 
 @Component({
@@ -13,8 +14,8 @@ import { SearchTermComponent } from '../search-term/search-term.component';
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
     imports: [CommonModule,
-        TagComponent, 
-         SearchTermComponent]
+        TagComponent,
+        SearchTermComponent, FoodComponent]
 })
 
 export class HomeComponent implements OnInit{

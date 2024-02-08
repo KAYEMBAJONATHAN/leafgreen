@@ -4,6 +4,7 @@ import { OrderComponent } from './component/order/order.component';
 import { NavigationComponent } from './component/navigation/navigation.component';
 import { SearchTermComponent } from './component/search-term/search-term.component';
 import { TagComponent } from './component/tag/tag.component';
+import { FoodComponent } from './component/food/food.component';
 
 
 export const routes: Routes = [
@@ -11,5 +12,6 @@ export const routes: Routes = [
     { path: 'order', component: OrderComponent },
     {path: 'search/:searchTerm', component: SearchTermComponent},
     { path: 'navigation', component: NavigationComponent },
-    {path: 'tag/:tag', component: TagComponent}
+    {path: 'tag/:tag', component: TagComponent},
+    {path: 'food/:id', component: FoodComponent}
 ];

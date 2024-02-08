@@ -8,4 +8,7 @@ div a {
     color: #800080;
     border: #808080;
     margin: 0.2rem 0.1rem;
+    padding: 0.3rem 0 1.5rem;
+    font-weight: 900;
+    border-radius: 10rem;
 }
