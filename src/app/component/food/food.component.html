@@ -1,19 +1,29 @@
 <div class="container">
    <img [src]="greenLeaf.imageUrl" [alt]="greenLeaf.name">
    <div class="details">
-    <div class="header">
-        <span class="name">{{greenLeaf.name}}</span>
-        <span class="favorite{{greenLeaf.favorite?'':'not'}}"></span>
-    </div>
-        <div class="rating {{greenLeaf.stars}}">
+      <div class="header">
+          <span class="name">{{greenLeaf.name}}</span>
+          <span class="favorite{{greenLeaf.favorite?'':'not'}}"></span>
         </div>
-        <div class="orgins">
+          <div class="rating {{greenLeaf.stars}}">
+        </div>
+         <div class="orgins">
             <span *ngFor="let orgin of greenLeaf.orgins">{{orgin}}</span>
-        </div>
-        <div *ngIf="tag">
+         </div>
+         <div *ngIf="tag">
             <a *ngFor="let tag of greenLeaf.tag" routerLink="/tag/">
               {{tag}}
             </a>
+          </div>
+           <div class="delivery">
+              <span>
+                Time to Deliver 
+                <strong>{{greenLeaf.deliveryTime}}</strong>Item
+              </span>
+            </div>
+          <div class="price">
+           <span>{{greenLeaf.price | currency}}</span> 
          </div>
+       <button>Add to Cart</button>
    </div>
 </div>

@@ -11,7 +11,7 @@ export const sample_veggies: GreenLeaf[] = [
       imageUrl: '../assets/green-peppers.jpg',
       orgins: ['matadi'],
       deliveryTime: '9-23',
-      tag: ['Green Pepper']
+      tag: ['Most Health veggies']
     },
     {
       id: '2',
@@ -19,10 +19,10 @@ export const sample_veggies: GreenLeaf[] = [
       price: 30,
       favorite: false,
       stars: 5.3,
-      imageUrl: '../assets/chilli.png',
+      imageUrl: '../assets/chilli.jpg',
       orgins: ['mitedi'],
       deliveryTime: '8-2',
-      tag: ['Chili']
+      tag: ['health-benefits-of-chilli']
     },
     {
       id: '3',
