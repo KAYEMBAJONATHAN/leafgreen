@@ -15,13 +15,13 @@ import { GreenLeaf } from '../../shared/models/greenLeaf';
 })
 export class FoodComponent implements OnInit{
   greenLeaf!: GreenLeaf;
-tag: any;
-
+  tag: any;
+ 
   constructor(private api:  DataService, activateRoute: ActivatedRoute){
-    activateRoute.params.subscribe((params) => {
-      if(params['id'])
-      this.greenLeaf = this.api.getAllVeggiesById(params['id'])
-    })
+     activateRoute.params.subscribe((params) => {
+        if(params['id'])
+          this.greenLeaf = this.api.getAllVeggiesById(params['id'])
+     })
   }
 
   ngOnInit(): void {

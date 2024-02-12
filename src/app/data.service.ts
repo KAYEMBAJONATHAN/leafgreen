@@ -29,8 +29,8 @@ export class DataService {
       greenLeaf.tag?.includes(tag));
   }
 
-  getAllVeggiesById(greenLeaf: string) {
-    return this.getAll().find(greenLeaf => greenLeaf.id) ?? new GreenLeaf();
+  getAllVeggiesById(greenLeafId: string) {
+    return this.getAll().find(greenLeaf => greenLeaf.id === greenLeafId) ?? new GreenLeaf();
   }
 }
 

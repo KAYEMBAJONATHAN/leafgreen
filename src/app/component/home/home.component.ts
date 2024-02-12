@@ -22,13 +22,13 @@ export class HomeComponent implements OnInit{
    greenLeafs: GreenLeaf[] = [];
    
   constructor(private api: DataService, activateRoute: ActivatedRoute){
-    activateRoute.params.subscribe( (params) => {
-     if(params['searchTerm']) 
-      this.greenLeafs= this.api.getAllGreenLeafByTerm(params['searchTerm']);
-      else if(params['tag'])
-      this.greenLeafs = this.api.getAllGreenLeafByTerm(params['tag'])
-    else
-    this.greenLeafs = api.getAll();
+     activateRoute.params.subscribe( (params) => {
+       if(params['searchTerm']) 
+         this.greenLeafs= this.api.getAllGreenLeafByTerm(params['searchTerm']);
+       else if(params['tag'])
+         this.greenLeafs = this.api.getAllGreenLeafByTerm(params['tag'])
+       else
+         this.greenLeafs = api.getAll();
     })
   
   }
