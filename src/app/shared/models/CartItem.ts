@@ -1,12 +1,19 @@
 import { GreenLeaf } from "./greenLeaf";
 
 export class CartItem {
-    constructor(private greenLeaf: GreenLeaf){
-       this.publicGreenLeaf = greenLeaf 
-    }
-
-    publicGreenLeaf!: GreenLeaf;
+    publicGreenLeaf: GreenLeaf;
 
     quantity: number = 1;
-    price: number = this.greenLeaf.price;
+    price: number;
+
+    constructor(greenLeaf: GreenLeaf){
+      
+       if (greenLeaf) {
+           this.publicGreenLeaf = greenLeaf;
+           this.price = greenLeaf.price;
+       } else {
+           
+           throw new Error("GreenLeaf is undefined");
+       }
+    }
 }

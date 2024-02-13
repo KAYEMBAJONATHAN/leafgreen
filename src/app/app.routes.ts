@@ -13,5 +13,5 @@ export const routes: Routes = [
     { path: 'navigation', component: NavigationComponent },
     {path: 'tag/:tag', component: TagComponent},
     {path: 'food/:id', component: FoodComponent},
-    {path: 'cart/:cart', component: CartComponent}
+    {path: 'cart', component: CartComponent}
 ];

@@ -4,15 +4,17 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../../data.service';
 import { GreenLeaf } from '../../shared/models/greenLeaf';
 import { CartService } from '../../cart.service';
+import { CartComponent } from "../cart/cart.component";
 
 @Component({
-  selector: 'app-food',
-  standalone: true,
-  templateUrl: './food.component.html',
-  styleUrl: './food.component.css',
-  imports:[
-    CommonModule,
-  ]
+    selector: 'app-food',
+    standalone: true,
+    templateUrl: './food.component.html',
+    styleUrl: './food.component.css',
+    imports: [
+        CommonModule,
+        CartComponent
+    ]
 })
 export class FoodComponent implements OnInit{
   greenLeaf!: GreenLeaf;

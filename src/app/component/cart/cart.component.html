@@ -1,1 +1,13 @@
-<p>cart works!</p>
+<app-title title="Cart" margin="1rem 0 1rem 0.2rem"></app-title>
+<div class="container">
+    <ul>
+        <li *ngFor="let cartItem of cart.items">
+           <div>
+             <img [src]="cartItem.publicGreenLeaf.imageUrl" [alt]="cartItem.publicGreenLeaf.name">
+           </div>
+            <div>
+                <a routerLink="/publicGreenLeaf{{cartItem.publicGreenLeaf.id}}"></a>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -90,11 +90,56 @@ export const sample_veggies: GreenLeaf[] = [
       orgins: ['Mbm'],
       deliveryTime: '4-2',
       tag: ['Red Pepper']
+    },
+    {
+      id: '9',
+      name: 'Casava',
+      price: 21,
+      favorite: false,
+      stars: 3.3,
+      imageUrl: '../assets/Cassava.jpg',
+      orgins: ['Katanga'],
+      deliveryTime: '7-2',
+      tag: ['Bon pour la Sante']
+    },
+    {
+      id: '10',
+      name: 'okra',
+      price: 20,
+      favorite: false,
+      stars: 6.3,
+      imageUrl: '../assets/okra.jpg',
+      orgins: ['Mbm'],
+      deliveryTime: '4-2',
+      tag: ['Bon pour la Sante']
+    },
+    {
+      id: '11',
+      name: 'slicwartermelon',
+      price: 21,
+      favorite: false,
+      stars: 3.3,
+      imageUrl: '../assets/slicwatermelon.jpg',
+      orgins: ['Katanga'],
+      deliveryTime: '7-2',
+      tag: ['Bon pour la Sante']
+    },
+    {
+      id: '12',
+      name: 'sweet-potato',
+      price: 20,
+      favorite: false,
+      stars: 6.3,
+      imageUrl: '../assets/sweet-potato.jpg',
+      orgins: ['Mbm'],
+      deliveryTime: '4-2',
+      tag: ['Bon pour la Sante']
     }
+
   ];
 
  export const sample_tags: Tag[] = [
-    { name: 'All', count: 9 },
+    { name: 'All', count: 12 },
     { name: 'Chilli', count: 8 },
     { name: 'Tomate', count: 15 },
     { name: 'Green Pepper', count: 4 },
@@ -102,4 +147,8 @@ export const sample_veggies: GreenLeaf[] = [
     { name: 'Plantin', count: 5 },
     { name: 'Pondu', count: 2 },
     { name: 'Red Pepper', count: 2 },
+    { name: 'Cassava', count: 16 },
+    { name: 'Okra', count: 15 },
+    { name: 'Sweet-potato', count: 22 },
+    { name: 'Wartermelon', count: 12 }
   ];
