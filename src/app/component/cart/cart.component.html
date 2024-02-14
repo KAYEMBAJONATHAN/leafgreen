@@ -2,12 +2,39 @@
 <div class="container">
     <ul>
         <li *ngFor="let cartItem of cart.items">
-           <div>
-             <img [src]="cartItem.publicGreenLeaf.imageUrl" [alt]="cartItem.publicGreenLeaf.name">
-           </div>
             <div>
-                <a routerLink="/publicGreenLeaf{{cartItem.publicGreenLeaf.id}}"></a>
+                <img [src]="cartItem.publicGreenLeaf.imageUrl" [alt]="cartItem.publicGreenLeaf.name">
+            </div>
+            <div>
+                <a routerLink="/publicGreenLeaf{{cartItem.publicGreenLeaf.id}}">
+                    {{cartItem.publicGreenLeaf.name}}
+                </a>
+            </div>
+            <div>
+                <select #quantitySelect [value]="cartItem.quantity"
+                    (change)="changeQuantity(cartItem, quantitySelect.value)">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div>
+                {{cartItem.price | currency }}
+            </div>
+            <div>
+                <button class="remove" (click)="removeFromCart(cartItem)">
+                    Remove
+                </button>
             </div>
         </li>
     </ul>
+    <div class="payment">
+        <div>
+            <div class="publicGreenLeaf.count">{{cart.totalCount}}</div>
+            <div class="total.price">{{cart.totalPrice}}</div>
+        </div>
+        <a routerLink="/payment">Proceed Payment</a>
+    </div>
 </div>

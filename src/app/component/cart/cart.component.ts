@@ -7,29 +7,29 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-    selector: 'app-cart',
-    standalone: true,
-    templateUrl: './cart.component.html',
-    styleUrl: './cart.component.css',
-    imports: [TitleComponent, CommonModule, RouterModule]
+   selector: 'app-cart',
+   standalone: true,
+   templateUrl: './cart.component.html',
+   styleUrl: './cart.component.css',
+   imports: [TitleComponent, CommonModule, RouterModule]
 })
-export class CartComponent implements OnInit{
-cart !: Cart
-  constructor(private cartService: CartService) {
-     this.cartService.getCartObservable().subscribe((cart) => {
-        this.cart = cart;
-     })
-  }
+export class CartComponent implements OnInit {
+   cart !: Cart
+   constructor(private cartService: CartService) {
+      this.cartService.getCartObservable().subscribe((cart) => {
+         this.cart = cart;
+      })
+   }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
 
-  }
-  removeFromCart(cartItem: CartItem) {
-    this.cartService.removeFromCart(cartItem.publicGreenLeaf.id);
-  }
+   }
+   removeFromCart(cartItem: CartItem) {
+      this.cartService.removeFromCart(cartItem.publicGreenLeaf.id);
+   }
 
-  changeQuantity(cartItem: CartItem, quantityInString: string) {
-     const quantity = parseInt(quantityInString);
-     this.cartService.changeQuantity(cartItem.publicGreenLeaf.id, quantity);
-  }
+   changeQuantity(cartItem: CartItem, quantityInString: string) {
+      const quantity = parseInt(quantityInString);
+      this.cartService.changeQuantity(cartItem.publicGreenLeaf.id, quantity);
+   }
 }
