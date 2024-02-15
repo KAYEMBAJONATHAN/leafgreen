@@ -21,4 +21,35 @@ ul {
 ul li {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #0000ff;
+}
+
+ul li:last-child {
+    border: none;
+}
+
+li img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10rem;
+    object-fit: cover;
+}
+
+li div {
+    padding: 1rem;
+}
+
+li div:not(:first-child) {
+    flex-basis: 18%;
+}
+
+li select {
+    width: 5rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #add8e6;
+    font-size: 1.2rem;
+    font-weight: 200;
 }

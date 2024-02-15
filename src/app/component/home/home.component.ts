@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { TagComponent } from "../tag/tag.component";
 import { SearchTermComponent } from '../search-term/search-term.component';
 import { FoodComponent } from "../food/food.component";
+import { CartComponent } from "../cart/cart.component";
 
 
 @Component({
@@ -15,7 +16,10 @@ import { FoodComponent } from "../food/food.component";
     styleUrl: './home.component.css',
     imports: [CommonModule,
         TagComponent,
-        SearchTermComponent, FoodComponent]
+        SearchTermComponent,
+        FoodComponent, 
+        CartComponent
+      ]
 })
 
 export class HomeComponent implements OnInit{
